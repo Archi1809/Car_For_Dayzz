@@ -1,25 +1,20 @@
 import Image from 'next/image'
-import { SearchBar , CustomFilter, Hero, Carlist} from '@/components'
-import { fuels , yearsOfProduction} from '@/constants'
+import { SearchBar, Hero, Carlist} from '@/components'
 export default function Home() {
   return (
     <main className="overflow-hidden">
       <Hero />
 
-      <div className="mt-12 padding-x padding-y max-width" id="discover">
+      <div className="mt-12 padding-x padding-y max-width" id="CarCatalogue">
         <div className="home__text-container">
           <h1 className="text-4xl font-extrabold">Car Catalogue</h1>
         </div>
 
         <div className='home__filters'>
           <SearchBar />
-          <div className='home__filter-container'>
-            <CustomFilter title="fuel" options={fuels}/>
-            <CustomFilter title="year"  options={yearsOfProduction}/>
-          </div>
         </div>
 
-      <Carlist />  
+          <Carlist />  
       </div>
     </main>
   )

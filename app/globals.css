@@ -77,16 +77,8 @@
   @apply mt-12 w-full flex-between items-center flex-wrap gap-5;
 }
 
-.home__filter-container {
-  @apply flex justify-start flex-wrap items-center gap-2;
-}
-
 .home__cars-wrapper {
-  @apply grid 2xl:grid-cols-4 xl:grid-cols-3 md:grid-cols-2 grid-cols-1 w-full gap-8 pt-14;
-}
-
-.home__error-container {
-  @apply mt-16 flex justify-center items-center flex-col gap-2;
+  @apply grid 2xl:grid-cols-3 xl:grid-cols-3 md:grid-cols-2 grid-cols-1 w-full gap-5 pt-14;
 }
 /* END: Home styles */
 
@@ -132,33 +124,9 @@
 }
 
 .car__btn-container {
-  @apply justify-center mt-2 items-center gap-2 absolute bottom-0 w-full z-10;
+  @apply justify-center group-hover:hidden mt-2 items-center gap-2 absolute bottom-0 w-full z-10;
 }
 /* END: Car Card styles */
-
-/* START: Car Details styles */
-.car-details__dialog-panel {
-  @apply relative w-full max-w-lg max-h-[90vh] overflow-y-auto transform rounded-2xl bg-white p-6 text-left shadow-xl transition-all flex flex-col gap-5;
-}
-
-.car-details__close-btn {
-  @apply absolute top-2 right-2 z-10 w-fit p-2 bg-primary-blue-100 rounded-full;
-}
-
-.car-details__main-image {
-  @apply relative w-full h-40 bg-pattern bg-cover bg-center rounded-lg;
-}
-/* END: Car Details styles */
-
-/* START: Custom Filter styles */
-.custom-filter__btn {
-  @apply relative w-full min-w-[127px] flex justify-between items-center cursor-default rounded-lg bg-white py-2 px-3 text-left shadow-md sm:text-sm border;
-}
-
-.custom-filter__options {
-  @apply absolute mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm;
-}
-/* END: Custom Filter styles */
 
 /* START: Footer styles */
 .footer {
